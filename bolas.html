@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div-rojo {
+        width: 60vw;
+        height: 30vh;
+        background-color: red;
+        border: 10px dashed black;
+        border-radius: 18px;
+        position: relative;
+        margin: auto
+        
+    }
+    /* Estilo general para las bolas */
+    .div-bolas { 
+        width: 30vw;
+        height: 35vh;
+        border-radius: 60%;
+        margin: auto
+    }
+    .div-bolaverde {
+        background-color: green;
+        border: 10px dashed black;
+    }
+    .div-bolazul {
+        background-color: rgb(38, 0, 255);
+        border: 10px dashed black;
+        
+    }
+    .div-bolamarilla {
+        background-color: rgb(255, 238, 0);
+        border: 10px dashed black;
+    }
+    /* Contenedor para las bolas y otros divs */
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+    }
+    .div-violeta {
+        width: 98vw;
+        height: 20vh;
+        background-color: violet;
+        border: 2px dashed black;
+        border-radius: 18px;
+    }
+    .div-marron {
+        width: 98vw;
+        height: 20vh;
+        background-color: brown;
+        border: 2px dashed black;
+        border-radius: 18px;
+    }
+    .div-negro {
+        width: 98vw;
+        height: 40vh;
+        background-color: black;
+        border: 5px dotted white;
+        border-radius: 18px;
+    }
+
+</style>
+<body>
+    <div class="div-rojo"></div>
+    <!--La etiqueta marquee sirve para que el texto se mueva.-->
+    <marquee>bolas</marquee> 
+    <div class="contenedor">
+        <div class="div-bolas div-bolaverde"></div>
+        <div class="div-bolas div-bolamarilla"></div>   
+        <div class="div-bolas div-bolazul"></div>
+    </div>
+    <div class="contenedor">
+        <div class="div-violeta"></div>
+        <div class="div-marron"></div>
+    </div>
+    <div class="div-negro"></div>
+</body>
+</html>

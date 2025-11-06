@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Semanticas</title>
+    <style>
+        /*CSS para ajustar los margenes predefinidos y el fondo de la pagina*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(to bottom, #68afc3, #182746);
+            font-family: arial;
+            
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+        }
+        .aside {
+            background:linear-gradient(to bottom, #2044ba, #182746);
+            padding: 10px;
+            width: 10vw;
+            height: 70vh;
+            margin-right: 4px;
+            border:black solid 2px;
+            
+        }
+        /*CSS para los enlaces del aside*/
+        aside a {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            color:white
+        }
+        aside a:hover {
+            color: gray;
+        }
+        .main {
+            background:linear-gradient(to bottom, #1e8481, #345fb5);
+            padding: 10px;
+            width: 85vw;
+            border-radius: 10px;
+            
+        }
+        .header {
+            text-align: center;
+        }
+        /*CSS para el h1 del header*/
+        header h1 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: Impact;
+            font-size: 45px;
+        }
+        .nav {
+            background-color: rgb(41, 27, 120);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /*CSS para las listas de la nav y los vinculos*/
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            
+        }
+        nav ul li {
+            display: inline;    
+            margin-right: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration:underline;
+        }
+        nav a:hover {
+            color: gray;
+        }
+        button {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button a{
+            color:#000000
+
+        }
+        button a:hover {
+            color: rgb(101, 94, 201);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./educarexlogo-removebg-preview.png" alt="Logo Educarex" width="220" height="200">
+        <h1>Etiquetas Semánticas</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><button><a href="./index.html">Inicio</a></li></button>
+            <li><button><a href="./div.html">Ejercicio con DIVs</a></li></button>
+            <li><button><a href="./bolas.html">Ejercicio de bolas</a></li></button>
+            <li><button><a href="./mapa_interactivo.html">Mapa sensible</a></li></button>
+    </nav>
+
+    <div class="contenedor">
+    <aside class="aside">
+        <h2>Sidebar</h2>
+        <a href="https://rayuela.educarex.es">Rayuela</a>
+        <a href="https://www.educarex.es/">Educarex</a>
+        <a href="https://www.juntadeextremadura.es/">Junta de Extremadura</a>
+    </aside>
+
+    <main class="main">
+        <section id="home">
+            <h2>Inicio</h2>
+            <details>
+                <summary>¿Qué es el SEO?</summary>
+            
+            <p>SEO son las siglas en inglés de "Search Engine Optimization" (Optimización para Motores de Búsqueda), un conjunto de técnicas y estrategias para mejorar la visibilidad de un sitio web en los resultados orgánicos (no pagados) de los buscadores como Google. El objetivo es aumentar el tráfico de calidad a un sitio web al hacerlo más relevante y accesible, optimizando su contenido, su estructura técnica y construyendo su autoridad en la web. </p>
+            </details>
+        </section>
+        <section id="objectives">
+            <h2>Objetivos</h2>
+            <details>
+                <summary>¿Cuáles son los objetivos del SEO?</summary>
+            <p>Su objetivo es atraer más tráfico cualificado sin pagar por publicidad, y para lograrlo se utilizan tanto estrategias "on-page" (dentro del sitio web, como el contenido y palabras clave) como "off-page" (fuera del sitio, como la obtención de enlaces externos). </p>
+            </details>
+        </section>
+        <section id="services">
+            <h2>Servicios</h2>
+            <details>
+                <summary>¿Qué son los servicios de SEO?</summary>
+            
+            <p>Los servicios de SEO son un conjunto de técnicas profesionales para mejorar el posicionamiento de un sitio web en los resultados de búsqueda orgánica, como Google. Estos servicios incluyen auditorías, optimización técnica (SEO técnico), optimización de contenido en la página (SEO on-page), y estrategias para aumentar la autoridad externa (SEO off-page). Su objetivo principal es aumentar la visibilidad y el tráfico de calidad para que un negocio atraiga clientes potenciales y genere ventas.</p>
+            </details>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Mail: rdominguezb04@educarex.es</p> 
+    </div> 
+        </body>
+</html>
