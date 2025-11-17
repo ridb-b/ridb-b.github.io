@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Reynaldo Domínguez">
+    <meta name="Description" content="Ejercicio de tablas">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, DIV, tablas">
+<link rel="shortcut icon" href="../src/favicon.png"  type="image/x-icon">
+    <title>tablas</title>
+    <!--Para twitter (X) con twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tablas">
+    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta name="twitter:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
+<!--Para Whatsapp, Telegram-->
+    <meta property="og:title" content="Tablas">
+    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta property="og:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
+    
+    <style>
+        table {
+            font-family: cursive;
+            border-collapse: collapse;
+            width: 100%
+        }
+        
+        th {
+            background-color: #388803;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid rgb(90, 5, 116)
+        }
+        td {
+        background-color: #caecb4;
+        border:1px solid rgb(117, 4, 161);
+        text-align: center;
+        padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Horario 2ºSMR CURSO 25/26</caption>
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>SASP</td>
+            <td>OPT</td>
+            <td class="sor">SOR</td>
+            <td class="ser">SER</td>
+            <td rowspan="2">MME</td>
+        </tr>
+        <tr>
+            <td>SOR</td>
+            <td class="apw">APW</td>
+            <td class="ser">SER</td>
+            <td class="dig">DASP</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="font-family:Verdana;">RECREO</td>    
+        </tr>
+        <tr>
+            <td>SOR</td>
+            <td class="apw">APW</td>
+            <td class="ser">SER</td>
+            <td>IP2</td>
+            <td>SER</td>
+        </tr>
+        <tr>
+            <td class="ser">SER</td>
+            <td>MME</td>
+            <td>IP2</td>
+            <td>OPT</td>
+            <td>SOR</td>
+        <tr>
+            <td colspan="5">RECREO</td>    
+        </tr>
+        <tr>
+            <td class="ser">SER</td>
+            <td>MME</td>
+            <td rowspan="2">MME</td>
+            <td class="apw">APW</td>
+            <td>OPT</td>
+        </tr>
+        <tr>
+            <td>IP2</td>
+            <td>SOR</td>
+            <td>PI</td>
+            <td class="apw">APW</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Reynaldo Domínguez">
+    <meta name="Description" content="Ejercicio de posiciones">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, DIV">
+<link rel="shortcut icon" href="../src/favicon.png"  type="image/x-icon">
+    <title>posiciones</title>
+    <!--Para twitter (X) con twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Posiciones">
+    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta name="twitter:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
+<!--Para Whatsapp, Telegram-->
+    <meta property="og:title" content="Poisiciones">
+    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta property="og:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cuadro {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .arriba-izq {
+            position: relative;
+            top: 50px;
+            background-color: red;
+            opacity: 20%;
+        }
+        .arriba-izq:hover {
+            background-color: fuchsia;
+            opacity: 100%;
+            transform:rotateX(130deg);
+            transform:rotateY(100deg);
+            box-shadow: 100px 0 10px;
+        }
+
+        .derecha {
+            position: absolute;
+            margin-left: calc(100vw - 200px);
+            background-color: green;
+        }
+        .derecha:hover {
+            background-color: blue;
+            transition: all 0.5s ease-out;
+            transform: skew(30deg, 20deg);
+            transform: translateX(-100px);
+            box-shadow: 100px 20px 0px;
+        }
+        .pie {
+            width: 100vw;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            margin-top: 100vh;
+            
+        }
+        .bola {
+            width: 25vw;
+            height: 25vh;
+            background-color: palevioletred;
+            border-radius: 50%;
+            position: absolute;
+            margin-top:calc(50vh - 20vw);
+            margin-left:calc(50vw - 12.5vw);
+                 
+         }
+        .bola:hover {
+            background-color: orange;
+            width: 30vw;
+            height: 30vh;
+            margin-top:calc(50vh - 15vw);
+            margin-left:calc(50vw - 15vw);
+            transition: all 0.5s ease-out;
+            transform: rotate(9999999deg);
+            box-shadow: 0 0 9px black;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro arriba-izq"></div>
+    <div class="cuadro derecha"></div>
+    <div class="pie"></div>
+    <div class="bola"></div>
+</body>
+</html>
