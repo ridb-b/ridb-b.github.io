@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Reynaldo Domínguez">
+    <meta name="Description" content="Ejercicio de Javascript manipulando el DOM">
+    <meta name="Keywords" content="HTML, CSS, JavaScript">
+    <title>Ejercicio Javascript</title>
+    <!--Para twitter (X) con twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JavaScript">
+    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta name="twitter:url" content="https://ridb-b.github.io/pages/javascript.html">
+<!--Para Whatsapp, Telegram-->
+    <meta property="og:title" content="JavaScript">
+    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta property="og:url" content="https://ridb-b.github.io/pages/javascript.html">
+    <style>
+        body {
+            padding: 15px;
+        }
+        /* Hace que los elementos con estos ID no aparezcan al abrir la pagina */
+        #aparecer {
+            display: none
+        }
+        #sol {
+            display:none
+        }
+        /* Contenedor que reserva el espacio del arbol cuando la imagen se oculta */
+        .contenedor {
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        .clase-coleccion {
+            background-color: pink;
+            color:red;
+            font-size:10px;
+        }
+        .parrafo1 {
+            color: yellow;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio Javascript</h1>
+    <p id="saludo">Hola buenos dias</p>
+    <button type="button" onclick='document.getElementById("saludo").innerHTML= "Hoy vamos a hacer ejercicios de Javascript"'>Pulsa!</button>
+    
+    <p>Cambia la expresion del emoji.</p><br>
+    <!--Hay una imagen predeterminada y tres botones para cambiarla por distintas.-->
+    <img id=normal src="../src/normal.png" alt="cara normal" loading="lazy">
+
+    <button onclick="document.getElementById('normal').src='../src/triste.png'">Cara Triste</button>
+    <button onclick="document.getElementById('normal').src='../src/sonrisa.png'">Cara Feliz</button>
+    <button onclick="document.getElementById('normal').src='../src/normal.png'">Cara Normal</button>
+    
+    <p>Cambia el tema de la página.</p><br>
+    <!--Efecto día y noche. Cambia el color de fondo y de fuente.-->
+    <button id="luna" type="button" onclick="document.body.style.color= 'white';
+                                            document.body.style.backgroundColor = 'black'; 
+                                            document.getElementById('luna').style.display = 'none';
+                                            document.getElementById('sol').style.display = 'inline'">
+                                                <img src="../src/luna.png" alt="luna" loading="lazy"></button>
+
+    <button id="sol" type="button" onclick="document.body.style.color= 'black';
+                                            document.body.style.backgroundColor = 'white';
+                                            document.getElementById('sol').style.display = 'none';
+                                            document.getElementById('luna').style.display = 'inline'">
+                                                <img src="../src/sol.png" alt="sol" loading="lazy"></button>
+
+    <p>Haz aparecer o desaparecer el arbol</p>
+    <!--Muestra u oculta imagenes. Se mete la imagen en un contenedor fijo para
+         que al aplicar display:none a la imagen el espacio se mantenga. -->
+    <div class="contenedor">
+        <img id="arbol" src="../src/arbol.jpg" alt="arbol" loading="lazy" style="width:100%;height:100%;">
+    </div>
+
+    <button id="desaparece" type="button" onclick="document.getElementById('arbol').style.display = 'none';
+                                                document.getElementById('desaparece').style.display = 'none';
+                                                document.getElementById('aparecer').style.display = 'inline'
+    ">Desaparece el arbol</button>
+    
+    <button id="aparecer" type="button" onclick="document.getElementById('arbol').style.display = 'inline';
+                                                document.getElementById('desaparece').style.display = 'inline';
+                                                document.getElementById('aparecer').style.display = 'none'
+    ">Aparece el arbol</button>
+
+<pre>
+    <p>
+El DOM (siglas de Document Object Model, o Modelo de Objetos del 
+Documento) es una interfaz de programación para documentos HTML y XML. 
+Representa la estructura de una página web como un árbol de objetos, 
+permitiendo a los lenguajes de programación, como JavaScript, acceder a 
+los elementos del documento y manipular su contenido, estructura y 
+estilo de forma dinámica. 
+¿Cómo funciona el DOM?
+Cuando un 
+navegador web carga una página HTML, crea internamente una 
+representación en memoria de esa página. Esta representación es el DOM y
+ sigue una estructura jerárquica de árbol. 
+Documento: Es el nodo raíz del árbol, que representa toda la página web.
+Elementos:
+ Cada etiqueta HTML (como &lt;body&gt;, &lt;h1&gt;, &lt;div&gt;, 
+&lt;p&gt;) se convierte en un objeto, o nodo, dentro del árbol.
+Atributos: Los atributos de las etiquetas (id, class, src, etc.) también se representan como nodos.
+Contenido de texto: El texto dentro de las etiquetas también es un nodo. 
+¿Para qué sirve?
+El DOM actúa como un puente entre la página web estática y el código de programación, permitiendo que los desarrolladores: 
+Modifiquen el contenido: Actualicen textos o imágenes sin recargar la página.
+Cambien la estructura: Añadan, eliminen o reordenen elementos HTML.
+Alteran el estilo: Cambien las propiedades CSS para modificar la apariencia de los elementos.
+Manejen eventos: Reaccionen a las interacciones del usuario, como clics en botones o entradas de texto. 
+Ejemplo de manipulación del DOM
+Imagina un documento HTML simple:
+html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1 id="titulo"&gt;Hola, mundo&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+Usa el código con precaución.
+
+Con JavaScript, podrías manipular este documento a través del DOM de la siguiente manera:
+javascript
+// Acceder al elemento con el id "titulo"
+const tituloElemento = document.getElementById('titulo');
+
+// Modificar el contenido del elemento
+tituloElemento.textContent = '¡Hola, desde JavaScript!';
+
+// Crear un nuevo párrafo
+const nuevoParrafo = document.createElement('p');
+nuevoParrafo.textContent = 'Este párrafo ha sido añadido con JavaScript.';
+
+// Añadir el nuevo párrafo al cuerpo del documento
+document.body.appendChild(nuevoParrafo);
+Usa el código con precaución.
+
+Este
+ código permite modificar el contenido del &lt;h1&gt; y añadir un nuevo 
+&lt;p&gt; sin necesidad de recargar la página, haciendo que el sitio web
+ sea interactivo y dinámico.
+&lt;/p&gt;
+    </p>
+</pre>
+<!--getElementsByTagName devuelve una coleccion de elementos, accedera a cada
+elemento en funcion de su posicion-->
+<button onclick="
+
+/*
+    document.getElementsByTagName('p')[0].style.color='red';
+    document.getElementsByTagName('p')[0].style.size='15px';
+    document.getElementsByTagName('p')[0].style.fontWeight='bold';
+    document.getElementsByTagName('p')[0].style.fontStyle='italic';
+    document.getElementsByTagName('p')[0].classList.add('parrafo1');
+    document.getElementsByTagName('p')[0].classList.add('clase-coleccion')
+*/
+    /*Declaro la constante parrafo*/
+    const parrafo0 = document.getElementsByTagName('p')[0];
+    parrafo0.style.color='red';
+    parrafo0.style.fontSize='15px';
+    parrafo0.style.fontWeight='bold';
+    parrafo0.style.fontStyle='italic';
+    parrafo0.classList.add('parrafo1');
+    parrafo0.classList.add('clase-coleccion');
+">Cambia el aspecto del primer párrafo</button>
+
+
+<p id="parrafo-a-cambiar">Este es el párrafo cuyo aspecto cambiará.</p>
+
+<button onclick="cambiarEstilosGlobales()">Cambia el aspecto de todos los párrafos</button>
+
+<script>
+function cambiarEstilosGlobales() {
+// Selecciona TODOS los elementos <p> y los guarda en una lista (NodeList)
+const parrafos = document.querySelectorAll('p');
+
+// Itera sobre cada elemento individualmente para aplicar los estilos
+parrafos.forEach(parrafo => {
+parrafo.style.color = 'blue';
+parrafo.style.fontSize = '15px';
+parrafo.style.fontWeight = 'bold';
+parrafo.style.fontStyle = 'italic';
+});
+}
+</script>
+
+
+</body>
+</html>
+</body>
+</html>

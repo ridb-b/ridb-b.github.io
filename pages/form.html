@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Reynaldo Domínguez">
+    <meta name="Description" content="Formulario de ejemplo con validación HTML5">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, Formulario, Validación">
+    <link rel="shortcut icon" href="../src/favicon2.png"  type="image/x-icon">
+    <title>Formulario</title>
+    <!--Para twitter (X) con twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Formulario">
+    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta name="twitter:url" content="https://ridb-b.github.io/pages/form.html">
+    <!--Para Whatsapp, Telegram-->
+    <meta property="og:title" content="Formulario">
+    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
+    <meta property="og:url" content="https://ridb-b.github.io/pages/form.html">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" title="5 a 15 carácteres alfanuméricos">
+        <br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required pattern=".{8,}" title="Minimo 8 carácteres">
+        <br><br>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Seleccione su género</option>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+            <option value="prefer_not_to_say">Prefiero no decirlo</option>
+        </select>
+        <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de interes</legend>
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color" value="#000000">
+        <br><br>
+        <label for="phone">Número de teléfono:</label>
+        <input type="tel" id="phone" name="phone" required maxlength="9" pattern="[0-9]{9}" title="9 dígitos numéricos" placeholder="123-456-789">
+        <br><br>
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            Acepto los términos y condiciones
+        </label>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <br><br>
+        
+    </form>
+</body>
+</html>
