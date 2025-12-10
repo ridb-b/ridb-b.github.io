@@ -11,14 +11,78 @@
     <!--Para twitter (X) con twitter cards-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Formulario">
-    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:description" content="Formulario de ejemplo con validación HTML5">
     <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
     <meta name="twitter:url" content="https://ridb-b.github.io/pages/form.html">
     <!--Para Whatsapp, Telegram-->
     <meta property="og:title" content="Formulario">
-    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    <meta property="og:description" content="Formulario de ejemplo con validación HTML5">
     <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
     <meta property="og:url" content="https://ridb-b.github.io/pages/form.html">
+<style>
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    legend {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #39b16f;
+        padding: 0 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #292929;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    select {
+        height: 40px; 
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+ 
+
+
+
+</style>
+<link rel ="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -48,19 +112,28 @@
         </fieldset>
         <fieldset>
             <legend>Datos de interes</legend>
+        
         <label for="color">Color favorito:</label>
         <input type="color" id="color" name="color" value="#000000">
         <br><br>
         <label for="phone">Número de teléfono:</label>
         <input type="tel" id="phone" name="phone" required maxlength="9" pattern="[0-9]{9}" title="9 dígitos numéricos" placeholder="123-456-789">
         <br><br>
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <br><br>
+        <label for="msg">Escriba un mensaje:</label>
+        <textarea id="msg" name="msg" rows="4" cols="50" placeholder="Escriba su mensaje aquí..." required></textarea>
+        </fieldset>
         <label for="terms">
             <input type="checkbox" id="terms" name="terms" required>
             Acepto los términos y condiciones
         </label>
         <br><br>
         <input type="submit" value="Enviar">
-        <br><br>
+        
+        <input type="reset" value="Limpiar">
+       
         
     </form>
 </body>
