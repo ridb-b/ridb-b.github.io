@@ -8,108 +8,21 @@
     <meta name="Description" content="Pagina principal">
     <meta name="Keywords" content="HTML, CSS, JavaScript, SEO, SEM">
 <link rel="shortcut icon" href="src/favicon.png"  type="image/x-icon">
-    <title>Ejercicio Semanticas</title>
+    <title>Página principal</title>
     <!--Para twitter (X) con twitter cards-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pagina principal">
     <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
     <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
     <meta name="twitter:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
-<!--Para Whatsapp, Telegram-->
+    <!--Para Whatsapp, Telegram-->
     <meta property="og:title" content="Pagina principal">
     <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
     <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
     <meta property="og:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
     
-    <style>
-        /*CSS para ajustar los margenes predefinidos y el fondo de la pagina*/
-        body {
-            margin: 0px;
-            padding: 0px;
-            background:linear-gradient(to bottom, #68afc3, #182746);
-            font-family: arial;
-            
-        }
-        .contenedor {
-            display: flex;
-            flex-direction: row;
-        }
-        .aside {
-            background:linear-gradient(to bottom, #2044ba, #182746);
-            padding: 10px;
-            width: 10vw;
-            height: 70vh;
-            margin-right: 4px;
-            border:black solid 2px;
-            
-        }
-        /*CSS para los enlaces del aside*/
-        aside a {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
-            color:white
-        }
-        aside a:hover {
-            color: gray;
-        }
-        .main {
-            background:linear-gradient(to bottom, #1e8481, #345fb5);
-            padding: 10px;
-            width: 85vw;
-            border-radius: 10px;
-            
-        }
-        .header {
-            text-align: center;
-        }
-        /*CSS para el h1 del header*/
-        header h1 {
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
-            font-family: Impact;
-            font-size: 45px;
-        }
-        .nav {
-            background-color: rgb(41, 27, 120);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        /*CSS para las listas de la nav y los vinculos*/
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            
-        }
-        nav ul li {
-            display: inline;    
-            margin-right: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration:underline;
-        }
-        nav a:hover {
-            color: gray;
-        }
-        button {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        button a{
-            color:#000000
-
-        }
-        button a:hover {
-            color: rgb(101, 94, 201);
-        }
-
-
-    </style>
-    <!--Para twitter (X) con twitter cards-->
+    <link rel ="stylesheet" href="./css/main.css">
+   
 </head>
 <body>
     <header class="header">
@@ -118,19 +31,19 @@
     </header>
     <nav class="nav">
         <ul>
-            <li><button><a href="./index.html">Inicio</a></li></button>
-            <li><button><a href="./pages/div.html">Ejercicio con DIVs</a></li></button>
-            <li><button><a href="./pages/bolas.html">Ejercicio de bolas</a></li></button>
-            <li><button><a href="./pages/ancors.html">Ancors</a></li></button>
-            <li><button><a href="./pages/mapa_interactivo.html">Mapa sensible</a></li></button>
-            <li><button><a href="./pages/estilos.html">Estilos</a></li></button>
-            <li><button><a href="./pages/listas.html">Listas</a></li></button>
-            <li><button><a href="./pages/mi-primera-web.html">Mi primera web</a></li></button>
-            <li><button><a href="./pages/ol.html">Summaries y Details</a></li></button>
-            <li><button><a href="./pages/posiciones.html">Posiciones</a></li></button>
-            <li><button><a href="./pages/tablas.html">Tablas</a></li></button>
-            <li><button><a href="./pages/form.html">Formulario</a></li></button>
-            <li><button><a href="./pages/javascript.html">JavaScript</a></li></button>
+            <li><a class="btn" href="./index.html">Inicio</a></li>
+            <li><a class="btn" href="./pages/div.html">Ejercicio con DIVs</a></li>
+            <li><a class="btn" href="./pages/bolas.html">Ejercicio de bolas</a></li>
+            <li><a class="btn" href="./pages/ancors.html">Ancors</a></li>
+            <li><a class="btn" href="./pages/mapa_interactivo.html">Mapa sensible</a></li>
+            <li><a class="btn" href="./pages/estilos.html">Estilos</a></li>
+            <li><a class="btn" href="./pages/listas.html">Listas</a></li>
+            <li><a class="btn" href="./pages/mi-primera-web.html">Mi primera web</a></li>
+            <li><a class="btn" href="./pages/ol.html">Summaries y Details</a></li>
+            <li><a class="btn" href="./pages/posiciones.html">Posiciones</a></li>
+            <li><a class="btn" href="./pages/tablas.html">Tablas</a></li>
+            <li><a class="btn" href="./pages/form.html">Formulario</a></li>
+            <li><a class="btn" href="./pages/javascript.html">JavaScript</a></li>
         </ul>
     </nav>
 
@@ -169,6 +82,8 @@
         <section id="contact">
             <h2>Contacto</h2>
             <p>Mail: rdominguezb04@educarex.es</p> 
+        </section>
+    </main>
     </div> 
         
         <button class="button" type="button" onclick="document.getElementById('Fecha_y_hora').innerHTML = Date();">

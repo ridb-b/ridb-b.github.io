@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background:linear-gradient(to bottom, #68afc3, #182746);
+    font-family: arial;
+    
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+.aside {
+    background:linear-gradient(to bottom, #2044ba, #182746);
+    padding: 10px;
+    width: 10vw;
+    height: 70vh;
+    margin-right: 4px;
+    border:black solid 2px;
+    
+}
+/*CSS para los enlaces del aside*/
+aside a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color:white
+}
+aside a:hover {
+    color: gray;
+}
+.main {
+    background:linear-gradient(to bottom, #1e8481, #345fb5);
+    padding: 10px;
+    width: 85vw;
+    border-radius: 10px;
+            
+}
+.header {
+    text-align: center;
+}
+/*CSS para el h1 del header*/
+header h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Impact;
+    font-size: 45px;
+}
+.nav {
+    background-color: rgb(41, 27, 120);
+    padding: 10px;
+    border-radius: 5px;
+}
+/*CSS para las listas de la nav y los vinculos*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+            
+}
+nav ul li {
+    display: inline;    
+    margin-right: 10px;
+}
+nav a {
+    color: white;
+    text-decoration:underline;
+}
+nav a:hover {
+    color: gray;
+}
+button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+button a{
+    color:#000000
+
+}
+button a:hover {
+    color: rgb(101, 94, 201);
+}
+
+/* Estilo para enlaces del nav que actúan como botones */
+.nav a.btn {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+}
+.nav a.btn:hover {
+    color: gray;
+    background: rgba(255,255,255,0.08);
+}
