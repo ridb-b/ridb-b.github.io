@@ -5,113 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Author" content="Reynaldo Domínguez">
-    <meta name="Description" content="Pagina principal">
-    <meta name="Keywords" content="HTML, CSS, JavaScript, SEO, SEM">
-<link rel="shortcut icon" href="src/favicon.png"  type="image/x-icon">
-    <title>Página principal</title>
-    <!--Para twitter (X) con twitter cards-->
+    <meta name="Description" content="Página principal de recursos y ejercicios de desarrollo web. Estructura minimalista y moderna.">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, SEO, SEM, Portafolio, Web">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
+    <title>Página principal — Portal de Ejercicios</title>
+    
+    <!-- Redes Sociales / Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pagina principal">
-    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital.">
+    <meta name="twitter:title" content="Página principal — Portal de Ejercicios">
+    <meta name="twitter:description" content="Aprende desarrollo web, marketing digital y recursos interactivos.">
     <meta name="twitter:image" content="https://ridb-b.github.io/src/logo.png">
     <meta name="twitter:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
-    <!--Para Whatsapp, Telegram-->
-    <meta property="og:title" content="Pagina principal">
-    <meta property="og:description" content="Aprende desarrollo web, marketing digital.">
+    
+    <!-- Redes Sociales / Open Graph -->
+    <meta property="og:title" content="Página principal — Portal de Ejercicios">
+    <meta property="og:description" content="Aprende desarrollo web, marketing digital y recursos interactivos.">
     <meta property="og:image" content="https://ridb-b.github.io/src/logo.png">
     <meta property="og:url" content="https://ridb-b.github.io/pages/mapa_interactivo.html">
     
-    <link rel ="stylesheet" href="./css/main.css">
-   
+    <!-- Estilos Principales -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- Cabecera de la Web -->
     <header class="header">
-        <img src="./src/logo.png" alt="Logo" width="200" height="220">
+        <a href="./index.html" class="logo-link" title="Inicio">
+            <img src="./src/logo.png" alt="Logo RIDB" width="200" height="220">
+        </a>
         <h1>Página principal</h1>
+        <p class="tagline">Recursos de aprendizaje, diseño responsivo y ejercicios interactivos de desarrollo web.</p>
     </header>
-    <nav class="nav">
-        <ul>
-            <li><a class="btn" href="./index.html">Inicio</a></li>
-            <li><a class="btn" href="./pages/div.html">Ejercicio con DIVs</a></li>
-            <li><a class="btn" href="./pages/bolas.html">Ejercicio de bolas</a></li>
-            <li><a class="btn" href="./pages/ancors.html">Ancors</a></li>
-            <li><a class="btn" href="./pages/mapa_interactivo.html">Mapa sensible</a></li>
-            <li><a class="btn" href="./pages/estilos.html">Estilos</a></li>
-            <li><a class="btn" href="./pages/listas.html">Listas</a></li>
-            <li><a class="btn" href="./pages/mi-primera-web.html">Mi primera web</a></li>
-            <li><a class="btn" href="./pages/ol.html">Summaries y Details</a></li>
-            <li><a class="btn" href="./pages/posiciones.html">Posiciones</a></li>
-            <li><a class="btn" href="./pages/tablas.html">Tablas</a></li>
-            <li><a class="btn" href="./pages/form.html">Formulario</a></li>
-            <li><a class="btn" href="./pages/javascript.html">JavaScript</a></li>
-        </ul>
+
+    <!-- Sección de Ejercicios en Cuadrícula -->
+    <nav class="nav-container">
+        <div class="nav-section-title">Ejercicios & Prácticas</div>
+        <div class="nav-grid">
+            <a href="./pages/div.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Cajas</span>
+                    <h3>Ejercicio con DIVs</h3>
+                    <p>Diseño y comportamiento de bloques contenedores utilizando anchos fluidos y bordes personalizados.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/bolas.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Animación</span>
+                    <h3>Bolas Locas</h3>
+                    <p>Uso de marquesinas, formas redondeadas y colores dinámicos integrados en bloques flexibles.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/ancors.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Enlaces</span>
+                    <h3>Ancors e Índices</h3>
+                    <p>Navegación interna en una misma página web y enlaces estructurados a recursos externos.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/mapa_interactivo.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Multimedia</span>
+                    <h3>Mapa Sensible</h3>
+                    <p>Creación de mapas de imágenes con coordenadas clicables e interactividad en mapas geográficos.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/estilos.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Diseño</span>
+                    <h3>Prácticas de Estilos</h3>
+                    <p>Formatos, fuentes, colores y propiedades visuales aplicadas a etiquetas de texto básicas.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/listas.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Contenido</span>
+                    <h3>Listas & Tipos</h3>
+                    <p>Estructuración de listas ordenadas, desordenadas y listas de descripción para catálogos.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/mi-primera-web.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Inicios</span>
+                    <h3>Mi Primera Web</h3>
+                    <p>El punto de partida del desarrollo: estructura pura de HTML con textos, enlaces y encabezados.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/ol.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Interactividad</span>
+                    <h3>Summaries & Details</h3>
+                    <p>Pestañas colapsables nativas de HTML y acordeones interactivos sin necesidad de JavaScript.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/posiciones.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Posicionamiento</span>
+                    <h3>Posiciones CSS</h3>
+                    <p>Estudio de los comportamientos de posicionamiento: absolute, relative, fixed y static.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/tablas.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Datos</span>
+                    <h3>Tablas de Datos</h3>
+                    <p>Maquetación de tablas complejas con filas de cabecera, celdas de datos combinadas y bordes.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/form.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Formularios</span>
+                    <h3>Formularios de Registro</h3>
+                    <p>Entradas de texto, validaciones nativas, botones de acción e interfaces de envío de datos.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+            
+            <a href="./pages/javascript.html" class="nav-card">
+                <div>
+                    <span class="card-badge">Programación</span>
+                    <h3>Introducción a JS</h3>
+                    <p>Ejecución de scripts interactivos, manejo de fechas, eventos clicables y control dinámico del DOM.</p>
+                </div>
+                <span class="card-link">Ver ejercicio →</span>
+            </a>
+        </div>
     </nav>
 
+    <!-- Contenedor Principal (Sidebar + Acordeón de SEO) -->
     <div class="contenedor">
-    <aside class="aside">
-        <h2>Sidebar</h2>
-        <a href="https://www.w3schools.com/html/">W3Schools</a>
-        <a href="https://validator.w3.org/">Validator</a>
-        <a href="https://developer.mozilla.org/es/">MDN</a>
-    </aside>
+        <!-- Barra Lateral -->
+        <aside class="aside">
+            <h2>Recursos Útiles</h2>
+            <nav class="aside-links-container">
+                <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools Portal</a>
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C HTML Validator</a>
+                <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+            </nav>
+        </aside>
 
-    <main class="main">
-        <section id="home">
-            <h2>Inicio</h2>
-            <details>
-                <summary>¿Qué es el SEO?</summary>
+        <!-- Contenido Central (Acordeón de SEO) -->
+        <main class="main">
+            <section id="home">
+                <h2>Inicio</h2>
+                <details>
+                    <summary>¿Qué es el SEO?</summary>
+                    <p>SEO son las siglas en inglés de <strong>"Search Engine Optimization"</strong> (Optimización para Motores de Búsqueda), un conjunto de técnicas y estrategias para mejorar la visibilidad de un sitio web en los resultados orgánicos (no pagados) de buscadores como Google. El objetivo es aumentar el tráfico de calidad al hacerlo más relevante y accesible, optimizando su contenido, su estructura técnica y construyendo su autoridad en la web.</p>
+                </details>
+            </section>
             
-            <p>SEO son las siglas en inglés de "Search Engine Optimization" (Optimización para Motores de Búsqueda), un conjunto de técnicas y estrategias para mejorar la visibilidad de un sitio web en los resultados orgánicos (no pagados) de los buscadores como Google. El objetivo es aumentar el tráfico de calidad a un sitio web al hacerlo más relevante y accesible, optimizando su contenido, su estructura técnica y construyendo su autoridad en la web. </p>
-            </details>
-        </section>
-        <section id="objectives">
-            <h2>Objetivos</h2>
-            <details>
-                <summary>¿Cuáles son los objetivos del SEO?</summary>
-            <p>Su objetivo es atraer más tráfico cualificado sin pagar por publicidad, y para lograrlo se utilizan tanto estrategias "on-page" (dentro del sitio web, como el contenido y palabras clave) como "off-page" (fuera del sitio, como la obtención de enlaces externos). </p>
-            </details>
-        </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <details>
-                <summary>¿Qué son los servicios de SEO?</summary>
+            <section id="objectives">
+                <h2>Objetivos</h2>
+                <details>
+                    <summary>¿Cuáles son los objetivos del SEO?</summary>
+                    <p>Su objetivo principal es atraer más tráfico cualificado sin pagar por publicidad. Para lograr esto, se combinan tanto estrategias <em>"on-page"</em> (mejoras dentro del sitio web como la calidad del contenido y las palabras clave) como <em>"off-page"</em> (acciones externas para ganar autoridad, principalmente la obtención de enlaces externos o backlinks de calidad).</p>
+                </details>
+            </section>
             
-            <p>Los servicios de SEO son un conjunto de técnicas profesionales para mejorar el posicionamiento de un sitio web en los resultados de búsqueda orgánica, como Google. Estos servicios incluyen auditorías, optimización técnica (SEO técnico), optimización de contenido en la página (SEO on-page), y estrategias para aumentar la autoridad externa (SEO off-page). Su objetivo principal es aumentar la visibilidad y el tráfico de calidad para que un negocio atraiga clientes potenciales y genere ventas.</p>
-            </details>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Mail: rdominguezb04@educarex.es</p> 
-        </section>
-    </main>
+            <section id="services">
+                <h2>Servicios</h2>
+                <details>
+                    <summary>¿Qué son los servicios de SEO?</summary>
+                    <p>Los servicios de SEO son soluciones profesionales orientadas a mejorar el posicionamiento orgánico. Incluyen auditorías técnicas del sitio para corregir errores de velocidad e indexación, optimización en la página (redacción y estructuración), y el desarrollo de estrategias externas. Esto ayuda a que los negocios ganen visibilidad, atraigan clientes potenciales y multipliquen sus conversiones.</p>
+                </details>
+            </section>
+            
+            <section id="contact">
+                <h2>Contacto Directo</h2>
+                <p>¿Tienes alguna consulta o estás interesado en trabajar en un proyecto de desarrollo web o SEO?</p>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Email de contacto:</strong> 
+                    <a href="mailto:rdominguezb04@educarex.es" style="color: var(--accent-primary); font-weight: 600;">rdominguezb04@educarex.es</a>
+                </p> 
+            </section>
+        </main>
     </div> 
         
-        
+    <!-- Pie de Página -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-col">
                 <h3>Contacto</h3>
-                <p>Email: <a href="mailto:rdominguezb04@educarex.es">rdominguezb04@educarex.es</a></p>
+                <p style="margin-bottom: 0.75rem;">Para cualquier duda u oportunidad, puedes escribirme por email:</p>
+                <p><a href="mailto:rdominguezb04@educarex.es">rdominguezb04@educarex.es</a></p>
             </div>
+            
             <div class="footer-col">
-                <h3>Enlaces de interes</h3>
+                <h3>Enlaces de Interés</h3>
                 <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/form.html">Formularios</a></li>
-                    <li><a href="./pages/javascript.html">JavaScript</a></li>
+                    <li><a href="./index.html">Página de Inicio</a></li>
+                    <li><a href="./pages/form.html">Formulario Práctica</a></li>
+                    <li><a href="./pages/javascript.html">Consola JavaScript</a></li>
                 </ul>
             </div>
+            
             <div class="footer-col">
                 <h3>Acerca de</h3>
-                <p>Recursos y ejemplos sobre HTML, CSS y JavaScript.</p>
+                <p>Este espacio recopila diferentes prácticas de programación y maquetación web usando las tecnologías fundamentales del desarrollo: HTML5, CSS3 y JavaScript puro.</p>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>© 2024 Reynaldo Domínguez. Todos los derechos reservados.</p>
+            <p>© 2026 Reynaldo Domínguez. Todos los derechos reservados. Diseñado con una estética minimalista y moderna.</p>
+            <p id="Fecha_y_hora" class="footer-status-clock"></p>
         </div>
-        <button class="button" type="button" onclick="document.getElementById('Fecha_y_hora').innerHTML = Date();">
-        Click para ver la fecha y hora.</button>
-        <p id="Fecha_y_hora"></p>
     </footer>
-    </body>
+
+    <!-- Micro-interacciones y Scripts de Estado -->
+    <script>
+        // Spotlight al mover el ratón sobre las tarjetas
+        document.querySelectorAll('.nav-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Reloj de estado en tiempo real (reemplaza al botón tradicional)
+        function updateClock() {
+            const clockEl = document.getElementById('Fecha_y_hora');
+            if (clockEl) {
+                const now = new Date();
+                const dateStr = now.toLocaleDateString('es-ES', { weekday: 'short', day: 'numeric', month: 'short' });
+                const timeStr = now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                clockEl.innerHTML = `🟢 Sistema Online &bull; ${dateStr}, ${timeStr}`;
+            }
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
 </html>
