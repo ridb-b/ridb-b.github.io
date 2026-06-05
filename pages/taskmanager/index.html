@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Landing Page (Login) -->
+    <div id="landing-page" class="landing-layout">
+        <div class="landing-content">
+            <div class="landing-brand">
+                <i class="fas fa-layer-group logo-icon"></i>
+                <h1>Mis Tareas</h1>
+            </div>
+            <p>Tu productividad sincronizada en la nube.</p>
+            <div id="clerk-sign-in" class="clerk-container"></div>
+        </div>
+    </div>
+
+    <!-- App Dashboard -->
+    <div id="dashboard-app" class="dashboard-layout hidden">
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-layer-group"></i>
+                    <h2>Mis Tareas</h2>
+                </div>
+                <button id="login-btn" class="login-btn">
+                    <i class="fas fa-user"></i> Iniciar Sesión
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-inbox"></i> Todas
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    <i class="far fa-circle"></i> Pendientes
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    <i class="fas fa-check-circle"></i> Completadas
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="stats-info">
+                    <i class="fas fa-tasks"></i> <span id="task-count">0 tareas pendientes</span>
+                </div>
+                <div class="sidebar-actions">
+                    <button id="monthly-summary-btn" class="sidebar-action-btn">
+                        <i class="fas fa-chart-pie"></i> Resumen Mensual
+                    </button>
+                    <button id="clear-completed" class="sidebar-action-btn danger">
+                        <i class="fas fa-trash-alt"></i> Limpiar completadas
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Área Principal -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1 id="greeting">Organiza tu día</h1>
+                <p id="current-date">Cargando fecha...</p>
+            </header>
+            
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="¿Qué tienes en mente?" autocomplete="off">
+                <div class="input-row">
+                    <div class="datetime-wrapper">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="datetime-local" id="task-datetime" aria-label="Fecha y hora opcional">
+                    </div>
+                    <button id="add-btn" aria-label="Añadir tarea">
+                        <i class="fas fa-plus"></i> <span>Añadir</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tasks-container">
+                <ul class="task-list" id="task-list">
+                    <!-- Las tareas se generarán aquí con JavaScript -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de Resumen Mensual -->
+    <div id="summary-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Resumen Mensual</h2>
+            <p id="summary-month-text">Mes actual</p>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <span class="stat-number" id="summary-completed-count">0</span>
+                    <span class="stat-label">Tareas completadas</span>
+                </div>
+            </div>
+            <div class="summary-details">
+                <h3>Tareas realizadas</h3>
+                <ul id="summary-task-list" class="summary-task-list">
+                    <!-- JavaScript inyectará las tareas aquí -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
